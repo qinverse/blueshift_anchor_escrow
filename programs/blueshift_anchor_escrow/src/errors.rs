@@ -10,4 +10,6 @@ pub enum EscrowError {
     InvalidMintA,
     #[msg("Invalid mint b")]
     InvalidMintB,
+    #[msg("Invalid maker balance")]
+    InsufficientFunds,
 }

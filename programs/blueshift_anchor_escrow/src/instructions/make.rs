@@ -185,7 +185,7 @@ pub fn handler(
     require_keys_neq!(
         ctx.accounts.mint_a.key(),
         ctx.accounts.mint_b.key(),
-        EscrowError::InvalidMint
+        EscrowError::InvalidMintA
     );
 
     // （可选）提前校验 maker 余额是否足够
