@@ -12,7 +12,8 @@ use anchor_spl::{
     },
 };
 
-use crate::{Escrow, errors::EscrowError};
+use crate::state::Escrow;
+use crate::errors::EscrowError;
 
 #[derive(Accounts)]
 pub struct Refund<'info> {
